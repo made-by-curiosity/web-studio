@@ -1,0 +1,10 @@
+.menu-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include centeredFlex(inline-flex);
+  outline: 1px solid tomato;
+}
+
+.menu-button__icon {
+}

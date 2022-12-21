@@ -1,28 +1,26 @@
 .page-footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-	background-color: $primary-background-color;
+  background-color: $primary-background-color;
 }
 
 .page-footer__contacts-block {
-	margin-right: 70px;
+  margin-right: 70px;
 }
 
-
 .page-footer__subscribe-block {
-	min-width: 570px;
+  // min-width: 570px;
 
-	margin-left: auto;
+  margin-left: auto;
 }
 
 .page-footer__block-title {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 
-	font-weight: 700;
-	line-height: 1.14;
-	text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 
-	color: $secondary-color;
+  color: $secondary-color;
 }
-
