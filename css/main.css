@@ -338,6 +338,8 @@ button {
   cursor: pointer;
   border: none;
   background-color: inherit;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 img {
@@ -385,17 +387,18 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__menu {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
-  .page-header__menu .is-open {
+  .page-header__menu {
+    display: none;
+  }
+  .page-header__menu.is-open {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     display: block;
+    background-color: #ffffff;
   }
 }
 .hero {
@@ -471,11 +474,21 @@ address {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .container--header {
@@ -485,13 +498,9 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .container--header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -1254,5 +1263,22 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 1px solid tomato;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button_icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-button_icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-button_icon-menu {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -3,17 +3,20 @@
   border-bottom: 1px solid $header-border-color;
 }
 
-.page-header__menu {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
-  .page-header__menu .is-open {
+  .page-header__menu {
+    display: none;
+  }
+
+  .page-header__menu.is-open {
     position: absolute;
     top: 0;
     left: 0;
 
     width: 100%;
+    height: 100vh;
     display: block;
+
+    background-color: $secondary-color;
   }
 }

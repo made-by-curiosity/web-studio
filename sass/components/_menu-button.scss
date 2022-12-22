@@ -3,8 +3,27 @@
   padding-bottom: 10px;
 
   @include centeredFlex(inline-flex);
-  outline: 1px solid tomato;
+  outline: none;
+
+  // hz nado li eto tyt poka
+  // &:hover,
+  // &:focus {
+  //   fill: $accent-color;
+  // }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.menu-button__icon {
+.menu-button_icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-button_icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-button_icon-menu {
+  display: none;
 }

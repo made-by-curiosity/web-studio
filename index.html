@@ -15,12 +15,17 @@
         <a href="index.html" lang="en" class="logo logo--header"
           >Web<span class="logo--header-color">Studio</span></a
         >
-        <div class="menu-button" data-menu-button>
-          <svg class="menu-button__icon" width="40" height="40">
-            <use href="./images/symbol-defs.svg#icon-cross"></use>
-            <use href="./images/symbol-defs.svg#icon-menu"></use>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg
+            class="menu-button__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/symbol-defs.svg#icon-cross" class="menu-button_icon-cross"></use>
+            <use href="./images/symbol-defs.svg#icon-menu" class="menu-button_icon-menu"></use>
           </svg>
-        </div>
+        </button>
         <div class="page-header__menu" data-menu>
           <!-- Навигация -->
           <nav class="site-nav">
@@ -522,5 +527,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

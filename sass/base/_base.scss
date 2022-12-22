@@ -1,21 +1,23 @@
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
-	color: $primary-color;
-	background-color: $secondary-color;
+  color: $primary-color;
+  background-color: $secondary-color;
 }
 
 button {
-	cursor: pointer;
-	border: none;
-	background-color: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
