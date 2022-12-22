@@ -1,6 +1,6 @@
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
 
@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
 }
 
 .hero__title {

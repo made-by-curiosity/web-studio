@@ -5,11 +5,10 @@
   @include centeredFlex(inline-flex);
   outline: none;
 
-  // hz nado li eto tyt poka
-  // &:hover,
-  // &:focus {
-  //   fill: $accent-color;
-  // }
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
