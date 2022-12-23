@@ -529,12 +529,18 @@ address {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #2196f3;
 }
 .logo:visited {
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo--header {
@@ -670,19 +676,29 @@ address {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: #212121;
 }
-
-.features-list__item {
-  width: 270px;
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.67;
+    margin-bottom: 50px;
+  }
 }
+
 .features-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item:not(:last-child) {
+    width: 270px;
+    margin-right: 30px;
+  }
 }
 
 .features-list__icon-box {
@@ -707,6 +723,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: #212121;
 }
 
@@ -748,15 +765,24 @@ address {
 }
 
 .teammate-list__card {
-  min-width: 270px;
-  padding-bottom: 30px;
+  max-width: 450px;
+  padding-bottom: 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .teammate-list__card:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .teammate-list__card {
+    max-width: 270px;
+    padding-bottom: 30px;
+  }
+  .teammate-list__card:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .teammate-list__photo {
