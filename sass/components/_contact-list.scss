@@ -1,11 +1,19 @@
 .contact-list {
-  // display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contact-list__item {
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -31,7 +39,7 @@
 }
 
 .contact-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
 
   fill: $primary-color;
 
@@ -40,5 +48,9 @@
   .contact-list__contact:hover &,
   .contact-list__contact:focus & {
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
   }
 }

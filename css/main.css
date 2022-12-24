@@ -389,12 +389,16 @@ address {
 }
 
 .page-header__menu {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .page-header__menu {
@@ -433,8 +437,9 @@ address {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -561,7 +566,12 @@ address {
 
 @media screen and (min-width: 768px) {
   .logo--header {
-    margin-right: 83px;
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    margin-right: 93px;
   }
 }
 
@@ -578,12 +588,11 @@ address {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.site-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
 }
 
 .site-nav__item {
@@ -623,12 +632,22 @@ address {
     border-radius: 2px;
   }
 }
-.contact-list {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contact-list__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .contact-list__contact {
@@ -652,13 +671,18 @@ address {
 }
 
 .contact-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: #757575;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list__contact:hover .contact-list__icon, .contact-list__contact:focus .contact-list__icon {
   fill: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__icon {
+    margin-right: 10px;
+  }
 }
 
 .main-button {
@@ -684,32 +708,18 @@ address {
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffffff;
 }
-@media screen and (min-width: 1200px) {
-  .main-button {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-.main-button:hover,
-.main-button:focus {
+.main-button:hover, .main-button:focus {
   background-color: #188ce8;
 }
 
-.main-button--subscribe {
-  padding-right: 28px;
-  padding-left: 28px;
-  fill: #ffffff;
+.main-button--hero {
+  min-width: 216px;
 }
 
-.main-button--form {
-  padding-right: 52px;
-  padding-left: 52px;
-}
-
-.main-button__text {
-  margin-right: 10px;
+.main-button__icon {
+  margin-left: 10px;
 }
 
 .section-title {

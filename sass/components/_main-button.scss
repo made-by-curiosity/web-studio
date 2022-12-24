@@ -16,29 +16,18 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 1200px) {
-    padding-left: 32px;
-    padding-right: 32px;
+  fill: $secondary-color;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
   }
 }
 
-.main-button:hover,
-.main-button:focus {
-  background-color: $btn-hover-color;
+.main-button--hero {
+  min-width: 216px;
 }
 
-.main-button--subscribe {
-  padding-right: 28px;
-  padding-left: 28px;
-
-  fill: $secondary-color;
-}
-
-.main-button--form {
-  padding-right: 52px;
-  padding-left: 52px;
-}
-
-.main-button__text {
-  margin-right: 10px;
+.main-button__icon {
+  margin-left: 10px;
 }
