@@ -2,11 +2,6 @@
   min-width: 200px;
   min-height: 50px;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
-  padding-right: 24px;
-
   @include centeredFlex(inline-flex);
 
   font-weight: 700;

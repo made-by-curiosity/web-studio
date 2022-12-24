@@ -2,14 +2,10 @@
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
 }
 
 .clients-list__item {
-  width: 210px;
+  width: calc((100% - 60px) / 2);
   height: 92px;
   margin: 15px;
 
