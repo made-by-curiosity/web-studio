@@ -965,13 +965,14 @@ address {
   height: 92px;
   margin: 15px;
 }
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: 226px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients-list__item {
     width: 170px;
-    height: 92px;
-  }
-  .clients-list__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
