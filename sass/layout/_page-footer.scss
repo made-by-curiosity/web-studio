@@ -5,25 +5,42 @@
   text-align: center;
 
   background-color: $primary-background-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.page-footer__wrapper {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__contacts-block {
   margin-bottom: 60px;
 
-  @media screen and (minx-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
 
-.page-footer__joinus-block {
-  margin-bottom: 60px;
-}
-
 .page-footer__subscribe-block {
-  // min-width: 570px;
-
-  @media screen and (minx-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
+    min-width: 570px;
   }
 }
 

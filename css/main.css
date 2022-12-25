@@ -455,23 +455,51 @@ address {
   text-align: center;
   background-color: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    text-align: left;
+  }
+}
+
+.page-footer__wrapper {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .page-footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__wrapper {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 0;
+  }
+}
 
 .page-footer__contacts-block {
   margin-bottom: 60px;
 }
-@media screen and (minx-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .page-footer__contacts-block {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .page-footer__contacts-block {
     margin-right: 70px;
   }
 }
 
-.page-footer__joinus-block {
-  margin-bottom: 60px;
-}
-
-@media screen and (minx-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .page-footer__subscribe-block {
     margin-left: auto;
+    min-width: 570px;
   }
 }
 
@@ -548,6 +576,16 @@ address {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
@@ -1127,7 +1165,12 @@ address {
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -1148,8 +1191,19 @@ address {
   color: #2196f3;
 }
 
-.subscribe-form {
-  max-width: 450px;
+@media screen and (max-width: 1199px) {
+  .subscribe-form {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .subscribe-form__input {
@@ -1163,6 +1217,7 @@ address {
   padding-bottom: 15px;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1191,6 +1246,12 @@ address {
 }
 .subscribe-form__input:hover, .subscribe-form__input:focus {
   border-color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .backdrop {
