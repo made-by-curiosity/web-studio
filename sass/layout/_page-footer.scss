@@ -17,10 +17,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
-    align-items: baseline;
     margin-bottom: 0;
   }
 }

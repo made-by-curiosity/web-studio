@@ -471,13 +471,13 @@ address {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-footer__wrapper {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     margin-bottom: 0;
   }
 }
@@ -517,6 +517,20 @@ address {
 @media screen and (min-width: 1200px) {
   .our-works {
     display: block;
+  }
+}
+
+.portfolio_filter-wrap {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio_filter-wrap {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio_filter-wrap {
+    margin-bottom: 50px;
   }
 }
 
@@ -1045,7 +1059,30 @@ address {
 }
 
 .filter-list {
-  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .filter-list {
+    margin-bottom: -15px;
+    margin-right: -8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-list__item {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-list__item:not(:last-child) {
@@ -1060,6 +1097,7 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   background-color: #f5f4fa;
   border-radius: 4px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1072,6 +1110,11 @@ address {
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-list__button--large-size {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .grid-list__item {
