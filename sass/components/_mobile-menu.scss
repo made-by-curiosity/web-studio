@@ -1,0 +1,16 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vh;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  display: none;
+
+  background-color: $secondary-color;
+}

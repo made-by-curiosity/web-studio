@@ -14,6 +14,7 @@
   text-align: left;
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.01em;
 
   cursor: pointer;
 
@@ -27,7 +28,6 @@
 
   margin-bottom: 4px;
 
-  letter-spacing: 0.01em;
   color: $primary-color;
   cursor: pointer;
 }
@@ -83,6 +83,9 @@
   display: block;
 
   resize: none;
+
+  font-size: 14px;
+  letter-spacing: 0.01em;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;

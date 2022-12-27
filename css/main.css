@@ -1351,6 +1351,7 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+  width: 95vw;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1436,6 +1437,7 @@ address {
   text-align: left;
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.01em;
   cursor: pointer;
 }
 .order-form__wrap:nth-last-child(3) {
@@ -1445,7 +1447,6 @@ address {
 .order-form__label {
   display: inline-block;
   margin-bottom: 4px;
-  letter-spacing: 0.01em;
   color: #757575;
   cursor: pointer;
 }
@@ -1490,6 +1491,8 @@ address {
   padding-right: 16px;
   display: block;
   resize: none;
+  font-size: 14px;
+  letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1549,9 +1552,9 @@ address {
 
 .policy-checkbox__custom {
   display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
+  min-width: 16px;
+  min-height: 15px;
+  margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
   -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1576,6 +1579,10 @@ address {
   color: #2196f3;
 }
 
+.policy-checkbox__text {
+  display: inline;
+  text-align: left;
+}
 @media screen and (max-width: 1199px) {
   .policy-checkbox__text {
     font-size: 12px;
@@ -1606,14 +1613,16 @@ address {
   }
 }
 
-.menu-button_icon-cross {
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: none;
-}
-
-.menu-button.is-open .menu-button_icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .menu-button_icon-menu {
-  display: none;
+  background-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

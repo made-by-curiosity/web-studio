@@ -10,9 +10,9 @@
 
 .policy-checkbox__custom {
   display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
+  min-width: 16px;
+  min-height: 15px;
+  margin-right: 8px;
 
   border: 2px solid #212121;
   border-radius: 2px;
@@ -41,6 +41,9 @@
 }
 
 .policy-checkbox__text {
+  display: inline;
+  text-align: left;
+
   @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17;

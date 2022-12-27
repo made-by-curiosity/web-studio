@@ -14,15 +14,3 @@
     display: none;
   }
 }
-
-.menu-button_icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .menu-button_icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .menu-button_icon-menu {
-  display: none;
-}
