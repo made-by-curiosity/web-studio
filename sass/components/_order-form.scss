@@ -1,101 +1,107 @@
 .order-form {
-	text-align: center;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
 }
 
 .order-form__wrap {
-	position: relative;
-	margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 10px;
 
-	display: block;
+  display: block;
 
-	text-align: left;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.17;
 
-	cursor: pointer;
-	
-	&:last-child {
-		margin-bottom: 20px;
-	}
+  cursor: pointer;
+
+  &:nth-last-child(3) {
+    margin-bottom: 20px;
+  }
 }
 
 .order-form__label {
-	margin-bottom: 4px;
+  display: inline-block;
 
-	font-size: 12px;
-	line-height: 1.17;
-	letter-spacing: 0.01em;
+  margin-bottom: 4px;
 
-	color: $primary-color;
-	cursor: pointer;
+  letter-spacing: 0.01em;
+  color: $primary-color;
+  cursor: pointer;
 }
 
 .order-form__input {
-	width: 100%;
-	height: 40px;
+  width: 100%;
+  height: 40px;
 
-	padding-top: 11px;
-	padding-bottom: 11px;
-	padding-left: 42px;
-	padding-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  padding-right: 12px;
 
+  font-size: 14px;
+  letter-spacing: 0.01em;
 
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-	outline: none;
-	cursor: pointer;
+  outline: none;
+  cursor: pointer;
 
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	&:hover,
-	&:focus {
-		border-color: $accent-color;
-	}
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
-// order-form__icon
+
 .order-form__icon {
-	position: absolute;
-	bottom: 11px;
-	left: 12px;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
 
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	.order-form__wrap:hover &,
-	.order-form__input:focus+& {
-		fill: $accent-color;
-	}
+  .order-form__wrap:hover &,
+  .order-form__input:focus + & {
+    fill: $accent-color;
+  }
 }
 
 .order-form__textarea {
-	width: 100%;
-	height: 120px;
+  width: 100%;
+  height: 120px;
 
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 16px;
-	padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
 
-	display: block;
+  display: block;
 
-	resize: none;
+  resize: none;
 
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	outline: none;
-	cursor: pointer;
+  outline: none;
+  cursor: pointer;
 
-	&::placeholder {
-		font-size: 12px;
-		line-height: 1.17;
-		letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-		color: $placeholder-color;
-	}
+    color: $placeholder-color;
+  }
 
-	&:hover,
-	&:focus {
-		border-color: $accent-color;
-	}
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
