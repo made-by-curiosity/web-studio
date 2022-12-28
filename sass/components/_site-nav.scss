@@ -1,26 +1,21 @@
 .site-nav__list {
-  display: flex;
-  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: auto;
+  }
 }
 
 .site-nav__item {
-  position: relative;
+  @media screen and (min-width: 768px) {
+    position: relative;
 
-  &:not(:last-child) {
-    margin-right: 50px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .site-nav__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  display: block;
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   color: $title-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -28,6 +23,17 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: block;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 

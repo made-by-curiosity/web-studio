@@ -10,6 +10,9 @@
   padding-left: 40px;
   padding-right: 40px;
 
+  display: flex;
+  flex-direction: column;
+
   transform: translateX(100%);
 
   background-color: $secondary-color;
