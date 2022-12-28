@@ -708,6 +708,11 @@ address {
 .contact-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact-list__item:not(:last-child) {
     margin-right: 50px;
@@ -722,17 +727,25 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-list__contact:link, .contact-list__contact:visited, .contact-list__contact:active {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
 .contact-list__contact:hover, .contact-list__contact:focus {
   color: #2196f3;
+}
+
+.contact-list__contact--tel {
+  font-size: 34px;
+  line-height: 1.18;
+  color: #2196f3;
+}
+
+.contact-list__contact--email {
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .contact-list__icon {
@@ -1662,6 +1675,7 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  letter-spacing: 0.02em;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   background-color: #ffffff;
@@ -1696,6 +1710,5 @@ address {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
-  letter-spacing: 0.02em;
   color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
