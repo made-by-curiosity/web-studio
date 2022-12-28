@@ -15,16 +15,13 @@
         <a href="index.html" lang="en" class="logo logo--header"
           >Web<span class="logo--header-color">Studio</span></a
         >
-        <button type="button" class="menu-button" data-menu-button>
-          <svg
-            class="menu-button__icon"
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <use href="./images/symbol-defs.svg#icon-cross" class="menu-button_icon-cross"></use>
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-button__icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu" class="menu-button_icon-menu"></use>
           </svg>
         </button>
@@ -390,5 +387,73 @@
         </div>
       </div>
     </footer>
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-button js-close-menu menu-button--close">
+        <svg class="menu-button__icon" width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-cross" class="menu-button_icon-cross"></use>
+        </svg>
+      </button>
+
+      <!-- Навигация -->
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a href="index.html" class="site-nav__link">Студія</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="portfolio.html" class="site-nav__link site-nav__link--current-page"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Контакты -->
+      <ul class="contact-list">
+        <li class="contact-list__item">
+          <a href="tel:+380961111111" class="contact-list__contact contact-list__contact--tel">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="contact-list__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="contact-list__contact contact-list__contact--email"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <!-- Соц Сети -->
+      <ul class="mobile-soc-list">
+        <li class="mobile-soc-list__item">
+          <a href="" class="mobile-soc-list__link">Instagram</a>
+        </li>
+        <li class="mobile-soc-list__item">
+          <a href="" class="mobile-soc-list__link">Twitter </a>
+        </li>
+        <li class="mobile-soc-list__item">
+          <a href="" class="mobile-soc-list__link">Facebook </a>
+        </li>
+        <li class="mobile-soc-list__item">
+          <a href="" class="mobile-soc-list__link">LinkedIn </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
