@@ -1,20 +1,87 @@
 .hero {
-  max-width: 1600px;
   height: 400px;
+
   margin-right: auto;
   margin-left: auto;
 
   text-align: center;
 
   background-color: $primary-background-color;
-  background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
-    url('../images/hero_bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .hero {
     height: 600px;
+
+    background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+      url('../images/hero_bg-1200.jpg');
+    background-size: 1600px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+        url('../images/hero_bg-1200@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+      url('../images/hero_bg-768.jpg');
+    background-size: 768px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+        url('../images/hero_bg-768@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+      url('../images/hero_bg-480.jpg');
+    background-size: 480px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+        url('../images/hero_bg-480@2x.jpg');
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero {
+    background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+      url('../images/hero_bg-480.jpg');
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
+        url('../images/hero_bg-480@2x.jpg');
+    }
   }
 }
 
