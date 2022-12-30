@@ -17,8 +17,7 @@
   border: 2px solid #212121;
   border-radius: 2px;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms $cubic, border-color 250ms $cubic;
 
   .policy-checkbox__original:focus + & {
     border-color: $accent-color;

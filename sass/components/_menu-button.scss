@@ -5,6 +5,8 @@
   @include centeredFlex(inline-flex);
   outline: none;
 
+  transition: fill 250ms $cubic;
+
   &:hover,
   &:focus {
     fill: $accent-color;
