@@ -6,11 +6,9 @@
 .page-header__menu {
   width: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include centeredFlex($jc: space-between);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-max) {
     display: none;
   }
 }

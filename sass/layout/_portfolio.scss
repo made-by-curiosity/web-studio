@@ -1,11 +1,11 @@
 .portfolio_filter-wrap {
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-min) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     margin-bottom: 50px;
   }
 }

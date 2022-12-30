@@ -6,7 +6,7 @@
 
   background-color: $primary-background-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     text-align: left;
   }
 }
@@ -14,13 +14,11 @@
 .page-footer__wrapper {
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+  @media screen and (min-width: $tablet-min) {
+    @include centeredFlex($jc: space-around, $ai: baseline);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     margin-bottom: 0;
   }
 }
@@ -28,17 +26,17 @@
 .page-footer__contacts-block {
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-min) {
     margin-bottom: 0px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     margin-right: 70px;
   }
 }
 
 .page-footer__subscribe-block {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     margin-left: auto;
     min-width: 570px;
   }

@@ -2,7 +2,7 @@
   line-height: 1.19;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-min) {
     margin: -15px;
     display: flex;
     flex-wrap: wrap;
@@ -18,18 +18,18 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-max) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-min) {
     max-width: 354px;
     margin: 15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     max-width: 270px;
     padding-bottom: 30px;
   }

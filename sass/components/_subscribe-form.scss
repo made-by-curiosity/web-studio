@@ -1,11 +1,11 @@
 .subscribe-form {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop-max) {
     max-width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     display: flex;
   }
 }
@@ -47,7 +47,7 @@
     border-color: $accent-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     margin-bottom: 0;
     margin-right: 12px;
   }

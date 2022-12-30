@@ -13,11 +13,11 @@
     transform: scale(0.5);
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile-min) {
     width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     width: 528px;
   }
 }
@@ -42,7 +42,7 @@
 
   color: $title-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     line-height: 1.15;
   }
 }

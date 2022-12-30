@@ -44,7 +44,7 @@
   display: inline;
   text-align: left;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop-max) {
     font-size: 12px;
     line-height: 1.17;
   }

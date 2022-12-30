@@ -1,9 +1,9 @@
 .contact-list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-max) {
     margin-top: auto;
     margin-bottom: 64px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     display: flex;
   }
 }
@@ -12,12 +12,12 @@
   &:not(:last-child) {
     margin-bottom: 10px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet-max) {
       margin-bottom: 32px;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     &:not(:last-child) {
       margin-right: 50px;
       margin-bottom: 0;
@@ -66,7 +66,7 @@
     fill: $accent-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     margin-right: 10px;
   }
 }

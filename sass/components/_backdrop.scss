@@ -24,9 +24,7 @@
 .backdrop_modal {
   min-height: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex;
 
   padding: 15px;
 }

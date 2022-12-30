@@ -1,5 +1,5 @@
 .features-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-min) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -7,17 +7,17 @@
 }
 
 .features-list__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-max) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-min) {
     width: 354px;
     margin: 15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     width: 270px;
   }
 }
@@ -43,7 +43,7 @@
 
   color: $title-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-min) {
     text-align: left;
   }
 }

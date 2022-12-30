@@ -8,7 +8,7 @@
 
   color: $title-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-min) {
     font-size: 36px;
     line-height: 1.67;
     margin-bottom: 50px;

@@ -1,3 +1,5 @@
+// Colors
+
 $primary-color: #757575;
 $secondary-color: #ffffff;
 $title-color: #212121;
@@ -16,3 +18,18 @@ $portfolio-wrapper-bg: rgba(33, 150, 243, 0.9);
 $works-wrapper-bg: rgba(47, 48, 58, 0.8);
 $backdrop-overlay-color: rgba(0, 0, 0, 0.2);
 $placeholder-color: rgba(117, 117, 117, 0.5);
+
+// Transition
+
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Sizes
+
+// Breakpoints
+
+$desktop-min: 1200px;
+$desktop-max: 1199px;
+$tablet-min: 768px;
+$tablet-max: 767px;
+$mobile-min: 480px;
+$mobile-max: 479px;
